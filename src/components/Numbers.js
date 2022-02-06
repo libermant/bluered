@@ -17,12 +17,12 @@ function classNunber(number){
 const Numbers = ({num,color}) => {
     const[numbery,numberChange]=useState(num)
     const[classy,classChange]=useState(color)
-    const pppp=()=>{    
-    numberChange([num=Math.ceil((Math.random() * 100))+parseInt (numbery)])
-    classChange(color=classNunber(num)+" n")
+    const table=()=>{    
+    numberChange([Math.ceil((Math.random() * 100))+parseInt (numbery)])
+    classChange(classNunber(num)+" n")
   }
   return (
-    <button className={classy} onClick={pppp}>
+    <button className={classy} onClick={table}>
         {numbery}
     </button>
   )
